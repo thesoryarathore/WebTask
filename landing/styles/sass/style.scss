@@ -1,0 +1,841 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #000000;
+}
+
+//** LIST
+// 0 - UNITS
+// 1 - COOKIES
+// 2 - HEADER
+// 3 - START CONTENT
+// 4 - PARTNERSHIP
+// 5 - MISSION
+// 6 - SCANNER
+// 7 - INTEGRATION
+// 8 - QR-CODE
+// 9 - GENERATE
+// 10 - ORDERING
+// 11 - PHONE
+// 12 - CONTACT
+// 13 - FOOTER
+// **//
+
+
+// 0 UNITS //
+
+.container {
+  position: relative;
+  max-width: 1270px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+  color: #FFFFFF;
+}
+
+.paragraph {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.app-store {
+  margin-right: 28px;
+  display: block;
+  width: 164px;
+  height: 52px;
+  background-image: url('../../images/download/app-store.svg');
+  background-size: 164px 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+  }
+}
+
+.google-play {
+  display: block;
+  width: 185px;
+  height: 52px;
+  background-image: url('../../images/download/google-play.svg');
+  background-size: 185px 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 7px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+  }
+}
+
+// 1 COOKIES //
+
+.cookies {
+  padding: 22px 100px 22px 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212834;
+  z-index: 999;
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 19px;
+  }
+
+  &__btn {
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+// 2 HEADER //
+
+.header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: 136px;
+  }
+
+  &__login {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -38px;
+      width: 26px;
+      height: 26px;
+      background-image: url('../../images/login.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+// 3 START CONTENT //
+
+.start-content {
+  padding-top: 40px;
+  padding-bottom: 58px;
+  overflow: hidden;
+
+  &__info {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding-top: 125px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 643px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 100px;
+    margin-top: 130px;
+    display: inline-block;
+    max-width: 380px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -170px;
+      left: -100px;
+      width: 318px;
+      height: 325px;
+      background-image: url('../../images/background-blur/start-content-blur-line.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -999;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 60px;
+      left: -25px;
+      display: inline-block;
+      width: 134px;
+      height: 4px;
+      background-color: #FFFFFF;
+      transform: rotate(120.61deg);
+    }
+  }
+
+  &__img-phone {
+    position: relative;
+    margin-right: 85px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -310px;
+      left: -310px;
+      width: 1029px;
+      height: 989px;
+      background-image: url('../../images/background-blur/start-content-blur-phone.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  &__download {
+    margin-top: 58px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  &__bottons {
+    margin-right: 63px;
+    display: flex;
+  }
+
+  &__btn {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// 4 PARTNERSHIP //
+
+.partnership {
+  padding: 60px 0;
+
+  &__cover {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 81px;
+  }
+
+  &__block {
+    padding: 64px 55px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 22px;
+  }
+
+  &__text {
+    flex-basis: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+// 5 MISSION //
+
+.mission {
+  padding: 176px 0 470px 0;
+
+  &__cover {
+    position: relative;
+    max-width: 358px;
+    margin-left: auto;
+    margin-right: 63px;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 358px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -70%;
+      right: -10%;
+      width: 285px;
+      height: 285px;
+      background-image: url('../../images/background-blur/mission-blur.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -999;
+    }
+  }
+
+  &__text {
+    margin-top: 23px;
+    max-width: 320px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: -310%;
+  }
+}
+
+// 6 SCANNER //
+.scanner {
+  padding-top: 466px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 40%, #000000 80%),
+  url('../../images/background-images/scanner.jpg') no-repeat (center 0 / cover);
+
+  &__cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__img {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__right {
+    margin: 0 80px 70px 0;
+  }
+
+  &__title {
+    max-width: 358px;
+  }
+
+  &__text {
+    margin-top: 23px;
+    max-width: 318px;
+  }
+}
+
+// 7 INTEGRATION //
+
+.integration {
+  padding: 205px 0;
+
+  &__cover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-block {
+    margin-top: 90px;
+  }
+
+  &__title {
+    max-width: 500px;
+  }
+
+  &__text {
+    margin-top: 23px;
+    max-width: 395px;
+  }
+}
+
+// 8 QR-CODE //
+
+.qr-code {
+  position: relative;
+  padding-top: 237px;
+  background: linear-gradient(180deg, #000000 0, rgba(0, 0, 0, 0) 300px, #000000 600px) no-repeat (left / 50%),
+  url('../../images/background-images/qr-code-left.jpg') no-repeat (left top / 50%),
+  url('../../images/background-images/qr-code-right.jpg') no-repeat (right top / 50%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 95px;
+    width: 148px;
+    height: 84px;
+    background-image: url('../../images/nightlife.svg');
+  }
+
+  &__cover {
+    padding: 0 80px;
+  }
+
+  &__left {
+    display: inline-block;
+    margin: 317px 80px 0 0;
+  }
+
+  &__title {
+    max-width: 315px;
+  }
+
+  &__text {
+    margin-top: 23px;
+    max-width: 315px;
+  }
+
+  &__bottons {
+    display: flex;
+    margin-top: 58px;
+  }
+
+  &__btn {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__right {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__img-bottom {
+    position: absolute;
+    top: 341px;
+    right: -80px;
+    transform: translateX(100%);
+  }
+}
+
+// 9 GENERATE //
+
+.generate {
+  padding: 384px 0 250px 0;
+  overflow: hidden;
+
+  &__top {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -500px;
+      left: -90px;
+      width: 1440px;
+      height: 1586px;
+      background: url('../../images/background-blur/generate-blur.svg') no-repeat center;
+      z-index: -999;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 110px;
+      width: 1940px;
+      height: 496px;
+      background: url('../../images/notab-text.svg') no-repeat center;
+      z-index: -998;
+    }
+
+    &-img {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 196px;
+        right: -148px;
+        width: 104px;
+        height: 74px;
+        content: '';
+        background: url('../../images/arrow.svg') center no-repeat;
+      }
+
+      &::after {
+        position: absolute;
+        top: 284px;
+        right: -285px;
+        content: 'Scan QR-code';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 26px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  &__title {
+    max-width: 400px;
+  }
+
+  &__text {
+    max-width: 300px;
+  }
+}
+
+// 10 ORDERING //
+
+.ordering {
+  display: block;
+
+  &__cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__top {
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
+  }
+
+  &__title {
+    max-width: 421px;
+  }
+
+  &__text {
+    margin-top: 23px;
+    max-width: 365px;
+  }
+
+  &__bottom {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__text-block {
+    position: absolute;
+    max-width: 240px;
+    padding: 20px 25px;
+    background: #000000;
+    border: 0.76007px solid rgba(255, 255, 255, 0.5);
+    border-radius: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    &_1 {
+      top: 359px;
+      left: -24px;
+    }
+
+    &_2 {
+      top: 204px;
+      right: 127px;
+    }
+
+    &_3 {
+      top: 639px;
+      right: -12px;
+    }
+
+    &_4 {
+      top: 730px;
+      left: 198px;
+    }
+  }
+}
+
+// 11 - PHONE
+
+.phone {
+  position: relative;
+  padding: 250px 0 200px 0;
+  background-image: url('../../images/background-images/phone.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// 12 CONTACT //
+
+.contact {
+  position: relative;
+  padding: 100px 0 45px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    width: 499px;
+    height: 874px;
+    background: url('../../images/background-blur/contact-blur-1.svg') no-repeat center;
+    z-index: -999;
+  }
+
+  &__title {
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -320px;
+      left: 0;
+      width: 772px;
+      height: 775px;
+      background: url('../../images/background-blur/contact-blur-2.svg') no-repeat center;
+      z-index: -999;
+    }
+  }
+
+  &__text {
+    max-width: 580px;
+    margin: 23px auto 0;
+    text-align: center;
+  }
+
+  &__form {
+    display: grid;
+    width: 818px;
+    margin: 82px auto 0;
+    grid-gap: 23px;
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 23px;
+  }
+
+  &__input {
+    padding: 29px 23px;
+    background: #FFFFFF;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    outline: none;
+
+    &::placeholder {
+      color: #BFBFBF;
+    }
+
+    &_error {
+      border: 2px solid #FF0000;
+    }
+  }
+
+  &__textarea {
+    height: 200px;
+    resize: none;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  &__btn {
+    display: block;
+    margin: 60px auto 0;
+    padding: 25px 30px;
+    min-width: 398px;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+// 13 FOOTER //
+
+.download {
+  margin-bottom: 150px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__bottons {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+  }
+
+  &__app-store {
+    margin-right: 60px;
+    width: 259px;
+    height: 82px;
+    background-size: 259px 82px;
+  }
+
+  &__google-play {
+    width: 293px;
+    height: 82px;
+    background-size: 293px 82px;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 45px 0 86px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 637px;
+    height: 561px;
+    background: url('../../images/background-blur/footer-blur.svg') no-repeat center;
+    z-index: -999;
+  }
+
+  &__cover {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__text {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    &_mail {
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &_copyright {
+      margin-top: 19px;
+      font-weight: 700;
+    }
+
+    &_link {
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:nth-child(2) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
